@@ -1,12 +1,15 @@
 {
   "name": "butternut-box-fe-task",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Front-end task for Butternut Box",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
 }
