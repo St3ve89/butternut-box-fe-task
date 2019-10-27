@@ -1,0 +1,163 @@
+// treat card component
+.treat-card {
+  width: 267px;
+  height: 132px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: $white;
+  padding: 10px;
+  position: relative;
+
+  &__radiobtn {
+    position: absolute;
+    left: 50%;
+    top: -22%;
+
+    transform: translateX(-50%);
+
+    input {
+      display: none;
+
+      // if the radiobtn checked
+      &[type='radio']:checked+label {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        padding: 10px;
+
+        &::before {
+          color: $white;
+          background-color: $blumine;
+          border-radius: 50%;
+        }
+
+        &+.sparks {
+          position: absolute;
+          left: 50%;
+          top: 45%;
+          z-index: 1;
+          transform: translate(-50%, -50%);
+          background-image: url(../img/circle-sparks.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          // animation set the width from 0 to 80px and the height
+          // duration 0.2s, timing-function: ease-out, fill-mode: forwards
+          animation: sparkGrow 0.2s ease-out forwards;
+        }
+      }
+    }
+
+    label {
+      cursor: pointer;
+      position: relative;
+      border-radius: 50%;
+      display: block;
+      width: 50px;
+      z-index: 2;
+      height: 50px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+        inset 0 4px 7px 0 rgba(0, 0, 0, 0.3);
+      border: solid 2px $blumine;
+      background-color: $wild-sand;
+
+      // I used the default tick with a unicode
+      &::before {
+        content: '\2714';
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        color: $cloud;
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: color 0.2s;
+      }
+
+      &:hover {
+        &::before {
+          color: $blumine;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    height: 100%;
+
+    .img {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      background-color: $botticelli;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &.fish {
+        background-image: url(../img/fishsnack.png);
+      }
+
+      &.lamb {
+        background-image: url(../img/lambsnack.png);
+      }
+    }
+
+    .detail {
+      flex: 1;
+      padding-left: 16px;
+      align-items: center;
+
+      p {
+        padding: 20px 0;
+        font-size: 18px;
+        margin: 0;
+        font-family: 'CooperHewitt';
+      }
+
+      .info {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        padding: 2.5px;
+        background: $white-ice;
+
+        img {
+          margin-right: 3px;
+        }
+
+        span {
+          display: flex;
+          letter-spacing: 0.05px;
+          line-height: 0.9;
+          font-size: 16px;
+          border-bottom: solid 1.5px $blumine;
+
+          svg {
+            margin-left: 1px;
+            position: relative;
+            top: -2px;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes sparkGrow {
+  0% {
+    height: 0;
+    width: 0;
+  }
+
+  100% {
+    height: 85px;
+    width: 80px;
+  }
+}
