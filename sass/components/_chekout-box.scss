@@ -1,0 +1,13 @@
+// set the main box
+.checkout-container {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $blumine;
+  width: 591px;
+  height: 298px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  border: solid 2px $chathams-blue;
+}
