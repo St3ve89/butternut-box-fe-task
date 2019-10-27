@@ -8,9 +8,9 @@ A online version of this task can also be found at https://istvan-butternut-box-
 
 To clone this repo, run `git clone https://github.com/St3ve89/butternut-box-fe-task.git` into your terminal.
 
-When the project has been downloaded, move into the folder by typing `cd Butternut-Box-Task`. Now, once your in the Butternut-Box-Task folder, run `npm install` to download the dependencies.
+When the project has been downloaded, move into the folder by typing `cd butternut-box-fe-task`. Now, once your in the Butternut-Box-Task folder, run `npm install` to download the dependencies.
 
-Once finished, running `npm run sass` will compile the SASS into a css. You can open `index.html` with a `live-server` extension and the browser window will be refreshed automatically.
+Once finished, running `npm run sass` will compile the SASS into a css. You can open `index.html` with a `live-server` extension (if you using VS Code) and the browser window will be refreshed automatically.
 
 ## Notes
 
