@@ -122,11 +122,15 @@ h6 {
       .treat-card__content .img.lamb {
         background-image: url(../img/lambsnack.png); }
     .treat-card__content .detail {
+      display: flex;
+      flex-direction: column;
       flex: 1;
       padding-left: 16px;
       align-items: center; }
       .treat-card__content .detail p {
-        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        flex: 1;
         font-size: 18px;
         margin: 0;
         font-family: 'CooperHewitt'; }
@@ -165,6 +169,12 @@ h6 {
   .flex.center {
     align-items: center;
     justify-content: center; }
+  .flex.acenter {
+    align-items: center; }
+  .flex.jccenter {
+    justify-content: center; }
+  .flex.btw {
+    justify-content: space-between; }
 
 .checkout-container {
   position: relative; }
@@ -207,7 +217,7 @@ h6 {
         position: absolute;
         width: 100%;
         z-index: -1; }
-  .checkout-container__checkbox-container {
+  .checkout-container__treat-card-container {
     width: 100%;
     padding: 0 21px;
     display: flex;
