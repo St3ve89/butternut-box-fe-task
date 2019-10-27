@@ -6,4 +6,16 @@
     align-items: center;
     justify-content: center;
   }
+
+  &.acenter {
+    align-items: center;
+  }
+
+  &.jccenter {
+    justify-content: center;
+  }
+
+  &.btw {
+    justify-content: space-between;
+  }
 }

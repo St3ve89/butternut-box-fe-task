@@ -107,12 +107,16 @@
     }
 
     .detail {
+      display: flex;
+      flex-direction: column;
       flex: 1;
       padding-left: 16px;
       align-items: center;
 
       p {
-        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        flex: 1;
         font-size: 18px;
         margin: 0;
         font-family: 'CooperHewitt';

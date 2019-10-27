@@ -33,7 +33,7 @@
       height: 59px;
     }
 
-    // set the underline for the header
+    // set the underline for the box title
     span {
       position: relative;
       white-space: nowrap;
@@ -52,7 +52,8 @@
     }
   }
 
-  &__checkbox-container {
+  // set the treat card container to be flex-wrap so the cards will break into a column if they cant fit in a row
+  &__treat-card-container {
     width: 100%;
     padding: 0 21px;
     display: flex;
