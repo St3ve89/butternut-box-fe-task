@@ -1,8 +1,8 @@
 # Butternut Box - Front End Developer Task
 
-This repo contains the submission of my developer task for a Front End Developer position at Butternut Box.
+This repo contains the submission of my developer task.
 
-A online version of this task can also be found at http://butternutbox.jamesbovis.com
+A online version of this task can also be found at https://istvan-butternut-box-fe-task.netlify.com/
 
 ## Getting started
 
@@ -20,7 +20,7 @@ This project uses [7-1 Sass architecture](https://sass-guidelin.es/#architecture
 
 ## Questions
 
-If you have any questions, please feel free to email me at hello@jamesbovis.com.
+If you have any questions, please feel free to email me at istvan.acs89@gmail.com.
 
 Thanks,
 Istvan
