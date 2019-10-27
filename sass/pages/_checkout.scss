@@ -1,0 +1,62 @@
+.checkout-container {
+  position: relative;
+
+  &__banner {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    z-index: 1;
+    top: -30px;
+    right: -27px;
+
+  }
+
+  &__title {
+    position: relative;
+    padding: 35px 0 0 70px;
+    font-size: 28px;
+    line-height: 1.5;
+    color: $white;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../img/sparks.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      right: -40px;
+      top: 12px;
+      width: 122px;
+      height: 59px;
+    }
+
+    // set the underline for the header
+    span {
+      position: relative;
+      white-space: nowrap;
+      z-index: 1;
+
+      &::after {
+        background-color: $portica;
+        bottom: 0;
+        content: '';
+        height: 0.2rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__checkbox-container {
+    width: 100%;
+    padding: 0 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
