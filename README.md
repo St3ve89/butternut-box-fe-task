@@ -2,7 +2,7 @@
 
 This repo contains the submission of my developer task.
 
-A online version of this task can also be found at https://istvan-butternut-box-fe-task.netlify.com/
+A online version of this task can also be found at https://istvan-butternutbox.netlify.com/
 
 ## Getting started
 
